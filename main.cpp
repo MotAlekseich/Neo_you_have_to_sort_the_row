@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <ctime>
 #include <random>
 int main() {
@@ -7,7 +7,7 @@ int main() {
 	int mx[x][x];
 	int sum{}, counter{}, n{};
 	srand(time(NULL));
-	std::cout << "Ïåðâîíà÷àëüíûé ìàññèâ:";
+	std::cout << "ÐŸÐµÑ€Ð²Ð¾Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:";
 	for (int i = 0; i < x; i++){
 		std::cout << '\n';
 		for (int j = 0; j < x; j++){
@@ -20,11 +20,11 @@ int main() {
 		for (int j = 0; j < x; j++) {
 			sum += mx[i][j];
 		}
-		std::cout << "Ñóììà " << counter << " ðÿäa = " << sum << '\n';
+		std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° " << counter << " Ñ€ÑÐ´a = " << sum << '\n';
 		counter++;
 		sum = 0;
 	}
-	std::cout << "\nÂâåäèòå íîìåð ðÿäà äëÿ ñîðòèðîâêè(îò 0 äî 9) -> \n";
+	std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ñ€ÑÐ´Ð° Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸(Ð¾Ñ‚ 0 Ð´Ð¾ 9)-> \n";
 	std::cin >> n;
 	for (int i = x - 1; i > 0; i--) {
 		for (int j = 0; j < i; j++) {
